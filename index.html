@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AINE AI</title>
+    <link rel="icon" href="./images/AINE.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onresize="collapse()">
+    <section class="container">
+        <div class="display_none" id="collapse-menu">
+            <button type="button" class="menu" id="menu" onclick="openNav()"><span class="fa fa-bars"></span></button>
+            <button type="button" class="display_none" id="close" onclick="closeNav()"><span class="fa fa-times"></span></button>
+        </div>
+        <nav class="sideNav" id="sideNav">
+            <ul class="sideNav-nav">
+                <li>
+                    <a href="#" class="nav-links">
+                        <img src="./images/AINE.png" alt="LOGO" class="logo-img">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">
+                        <span class="fa fa-user nav-links--icon"></span>
+                        <span class="nav-links--text">Students</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links active">
+                        <span class="fa fa-book nav-links--icon"></span>
+                        <span class="nav-links--text">Lesson Plan</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">
+                        <span class="fa fa-cog nav-links--icon"></span>
+                        <span class="nav-links--text">Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content-cotainer" id="content_cotainer">
+            <div class="content">
+                <h3 class="heading-secondary"><span class="fa fa-caret-left"></span> videos</h3>
+                <form action="" method="post" class="form">
+                    <input type="url" name="video_url" id="video_url">
+                    <p>or</p>
+                    <input type="file" name="video" id="video">
+                    <button type="submit" class="btn btn-primary">Upload</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
